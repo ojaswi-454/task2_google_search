@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            border: hidden;
+            height: 635px;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-items: stretch;
+        }
+
+        .heading {
+            justify-content: inherit;
+        }
+
+        .nav {
+            border: hidden;
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            padding-right: 5px;
+            background-color: rgb(204, 202, 202);
+
+
+        }
+
+        #n1 {
+            border: hidden;
+
+            display: flex;
+            margin: 2px;
+            padding: 2px;
+            color: black;
+        }
+
+
+        .main {
+            border: hidden;
+            padding-top: 5px;
+            height: 540px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            padding: 2px;
+
+        }
+
+
+
+
+
+        img {
+            height: 25px;
+            width: 75px;
+        }
+
+        #p3 {
+            border: hidden;
+            display: flex;
+
+            background-color: rgb(179, 179, 179);
+            border-bottom: rgb(204, 202, 202);
+            color: rgb(75, 74, 74);
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 10px;
+
+        }
+
+        #p1 {
+            border: hidden;
+            display: flex;
+            margin: 0px;
+            padding: 10px;
+            color: red;
+            font-size: 1.5rem;
+        }
+
+        hr {
+            padding: 0px;
+            margin: 0px
+        }
+
+        .main {
+            margin: 0px;
+            height: 540px;
+            border: hidden;
+        }
+
+        .form {
+            border: hidden;
+            display: flex;
+            width: 400px;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 5px 0px;
+        }
+
+        #p2 {
+            margin-bottom: 20px;
+            padding-left: 0px;
+
+
+        }
+
+
+        .btn {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            margin: 30px 272px;
+            width: 130px;
+            background-color: rgb(26, 47, 231);
+            color: white;
+            align-self: flex-end;
+            border-radius: 5px;
+
+        }
+
+        .footer {
+            border: hidden;
+            display: flex;
+            margin: 0px;
+            padding: 8px;
+            flex-wrap: wrap;
+            background-color: rgb(179, 179, 179);
+            border-top: 2px solid rgb(160, 160, 160);
+
+        }
+
+        a {
+            color: rgb(75, 74, 74);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        #f1 {
+            border: hidden;
+            display: flex;
+            margin: 2px;
+            padding: 2px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        #f2 {
+            border: hidden;
+            display: flex;
+            margin: 2px;
+            padding: 2px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        #f3 {
+            border: hidden;
+            display: flex;
+            margin: 2px;
+            padding: 2px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="nav">
+                <img src="google2.png">
+                <a href="index.html" id="n1">Go Back</a>
+            </div>
+
+            <p id="p1">Advanced Search</p>
+            <hr>
+
+        </div>
+
+        <div class="main">
+            <p id="p2">Find pages with...</p>
+            <form action="https://www.google.com/search">
+                <div class="form">
+
+                    <label for="aw">all these words: </label><input type="text" id="aw" name="as_q">
+                </div>
+
+                <div class="form">
+                    <label for="exact">exact word or phrase: </label>
+                    <input type="text" id="exact" name="as_epq">
+                </div>
+
+                <div class="form">
+                    <label for="any">any of these words:</label> <input type="text" id="any" name="as_oq">
+                </div>
+
+                <div class="form">
+                    <label for="none">none of these words:</label> <input type="text" id="none" name="as_eq">
+                </div>
+                <input type="submit" value="Advanced Search" class="btn">
+                <!-- <button class="btn">Advanced Search</button> -->
+        </div>
+        </form>
+    </div>
+    <div class="btm">
+        <p id="p3">India</p>
+        <footer class="footer">
+            <a href="https://support.google.com/websearch/?visit_id=637489035313613843-1545066500&hl=en-IN&rd=2#topic=3378866"
+                id="f1">Help</a>
+            <a href="https://policies.google.com/privacy?hl=en-IN&fg=1" id="f2">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en-IN&fg=1" id="f3">Terms</a>
+
+
+
+    </div>
+    </footer>
+    </div>
+</body>
+
+</html>
